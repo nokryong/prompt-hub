@@ -1,0 +1,36 @@
+@import "sud-ui/dist/index.css";
+@import "tailwindcss";
+
+:host {
+  --text: #475569;
+  --text-h: #020617;
+  --bg: #ffffff;
+  --border: #e2e8f0;
+  --accent: #0f172a;
+  --accent-bg: rgba(15, 23, 42, 0.08);
+  --accent-border: rgba(15, 23, 42, 0.22);
+
+  font:
+    14px/145% system-ui,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  letter-spacing: 0;
+  color: var(--text);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #64748b;
+  outline-offset: 2px;
+}

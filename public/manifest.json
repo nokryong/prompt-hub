@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "PromptHub",
+  "description": "ChatGPT에서 자주 쓰는 이미지 생성 프롬프트를 저장하고 빠르게 삽입합니다.",
+  "version": "0.0.1",
+  "permissions": ["storage", "clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["logo.svg"],
+      "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"]
+    }
+  ]
+}
